@@ -18,6 +18,17 @@ module.exports = {
 				draculaPurple: "#bd93f9",
 				draculaRed: "#ff5555",
 				draculaYellow: "#f1fa8c",
+
+				atomBg: "#282c34",
+				atomFg: "#abb2bf",
+				atomRed: "#E06c75",
+				atomGreen: "#98C379",
+				atomYellow: "#e5c07b",
+				atomBlue: "#61afef",
+				atomPurple: "#c678dd",
+				atomCyan: "#56b6c2",
+				
+				error: "#e06"
 			},
 		},
 	},

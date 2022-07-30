@@ -7,7 +7,6 @@ import {
 	MediaQuery,
 	Burger,
 	useMantineTheme,
-    MantineProvider,
 } from "@mantine/core";
 import ThemeSwitch from "../ThemeSwitch";
 

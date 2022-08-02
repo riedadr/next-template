@@ -10,10 +10,13 @@ import { useEffect, useState } from "react";
 
 function MyApp({ Component, pageProps }: AppProps) {
 	const [colorScheme, setColorScheme] = useState<ColorScheme>("light");
+
 	const toggleColorScheme = (value?: ColorScheme) => {
 		const newScheme = value || (colorScheme === "dark" ? "light" : "dark");
 		setColorScheme(newScheme);
-		document.querySelector("body").className = newScheme;
+
+		document.body.className = newScheme;
+
 		localStorage.colorScheme = newScheme;
 	};
 
@@ -22,7 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 			? localStorage.colorScheme
 			: "dark";
 		setColorScheme(currentScheme);
-		document.querySelector("body").className = currentScheme;
+		document.body.className = currentScheme;
 	}, []);
 
 	return (
